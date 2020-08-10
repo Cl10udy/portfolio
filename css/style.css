@@ -1,0 +1,49 @@
+/* reset */
+* {margin: 0; padding: 0; font-size: 16px; color: #000;}
+a {color: #333; text-decoration: none;}
+li {list-style: none;}
+table {border-spacing: 0;}
+.clearfix::before, .clearfix::after {display: block; content:''; clear:both;}
+
+#wrap {width: 1000px; margin: 0px auto;}
+
+/* header */
+#header h1 {float: left; padding: 15px 0 10px;}
+#header h1 img {width: 200px;}
+#header .nav {float: right; background: #fff;}
+#header .nav li {position: relative; float: left; width: 140px; text-align: center;}
+#header .nav li a {display: block; font-size: 20px; font-weight: bold; padding: 24px 20px 20px 20px; color: #000}
+#header .nav li a:hover {background: #c0c0c0;}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 67px; z-index: 100;}
+#header .nav li ul.submenu li a {padding: 10px; background: #eaeaea;}
+#header .nav li ul.submenu li a:hover {background: #c0c1c4;}
+
+/* banner */
+#banner {height: 389px; overflow: hidden;}
+#banner img {widows: 100%; display: block;}
+
+/* 좌우 */
+.slidelist {position: relative; width: 3000px; z-index: 50;}
+.slidelist .slideImg {position: relative; width: 1000px; float: left;}
+
+
+/* contents */ 
+#contents {margin-top: 20px;}
+#contents {height: 128px;}
+#contents img {width: 100%;}
+
+/* footer */
+#footer {padding: 20px 0; background: #000; margin-top: 30px;}
+#footer h2 {float: left; padding-right: 20px;}
+#footer h2 img {width: 150px;}
+#footer .foot {float: right; padding-right: 30px;}
+#footer .foot ul {padding-bottom: 10px;}
+#footer .foot ul li {display : inline;}
+#footer .foot ul li a {color: #fff; padding-right: 10px;}
+#footer .foot address {font-style: normal; color : #ccc;}
+
+/* mockup */
+#mockup {margin-top: 30px;}
+.best figure{float: left; width: 32%; margin-right: 2%;}
+.best figure img {width: 100%;}
+.best figure:last-child{margin-right: 0;}

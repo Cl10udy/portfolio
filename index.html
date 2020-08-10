@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>엄상훈</title>
+        
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+    <div id="wrap"> 
+        <header id="header" class="clearfix">
+            <h1><a href="#"></a><img src="image/logo.jpg" alt="portfolio"></h1>
+            <nav class="nav">
+                <ul class="clearfix">
+                    <li><a href="#">ABOUT ME</a>
+                        <ul class="submenu">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Goal</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Skills</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">WORK</a>
+                        <ul class="submenu">
+                            <li><a href="#">Photos</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">ETC</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SNS</a>
+                        <ul class="submenu">
+                            <li><a href="https://www.instagram.com/sanghun2_2/">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100010852184225">Facebook</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCkX2eAtxVouk_0EYCN7sadQ?view_as=subscriber">Youtube</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            </header>
+            
+        <!-- //header -->
+        <section id="banner">
+            <div class="slidelist">
+                <div class="slideImg">
+                    <img src="image/BN01.jpg" alt="아이폰">
+                </div>     
+                <div class="slideImg">
+                    <img src="image/BN02.jpg" alt="놀다오세요">
+                </div>
+                <div class="slideImg">
+                    <img src="image/BN03.jpg" alt="OST 해리포터 시계">
+                </div>
+            </div>
+        </section>
+        <!-- //banner -->
+        
+        <section id="contents">
+            <img src="image/content.jpg" alt="좌우명">
+        </section>
+        
+        
+        
+        <section id="mockup" class="clearfix">
+            <div class="best clearfix">
+                <figure>
+                    <img src="image/01.jpg" alt="카드뉴스">
+                    <figcaption> 카드뉴스 </figcaption>
+                </figure>
+                <figure>
+                    <img src="image/02.jpg" alt="박카스 광고">
+                    <figcaption> 박카스 광고 </figcaption>
+                </figure>
+                <figure>
+                    <img src="image/03.jpg" alt="놀다오세요 메인화면">
+                    <figcaption> 놀다오세요 메인화면 </figcaption> 
+                </figure>
+            </div>
+             <div class="best clearfix">
+                <figure>
+                    <img src="image/04.jpg" alt="OST 해리포터 시계">
+                    <figcaption> OST 해리포터 시계 </figcaption>
+                </figure>
+                <figure>
+                    <img src="image/05.jpg" alt="놀다오세요 앱 판넬">
+                    <figcaption> 놀다오세요 앱 판넬 </figcaption>
+                </figure>
+                <figure>
+                    <img src="image/06.jpg" alt="뉴트로 델몬트병">
+                    <figcaption> 뉴트로 델몬트병 </figcaption>
+                </figure>
+            </div>
+            <div class="best clearfix">  
+                <figure>
+                    <img src="image/07.jpg" alt="놀다오세요 리뷰화면">  
+                    <figcaption>놀다오세요 리뷰화면</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/08.jpg" alt="OST 해리포터 시계">
+                    <figcaption> OST 해리포터 시계 </figcaption>
+                </figure>
+                <figure> 
+                    <img src="image/09.jpg" alt="놀다오세요 앱 판넬">
+                    <figcaption> 놀다오세요 앱 판넬 </figcaption>
+                </figure>
+            </div>
+        </section>
+       <!-- //contents -->
+        
+        <footer id="footer" class="clearfix">
+                <h2><img src="image/logo%20black.jpg" alt="로고"></h2>
+                <div class="foot">
+                    <ul>
+                        <li><a href="https://policy.naver.com/rules/service.html">이용약관</a></li>
+                        <li><a href="https://www.navercorp.com/policy/person">개인정보처리방침</a></li>
+                        <li><a href="https://policy.naver.com/rules/disclaimer.html">법적고지</a></li>
+                        <li><a href="#">사업자 정보확인</a></li>
+                    </ul>
+                    <address>
+                        Designer: 엄상훈<br>
+                        Address: 서울시 강서구 까치산로 28길 8 502호 (현에비앙)<br>
+                        Mail: jeunai@naver.com
+                    </address>
+            
+            
+                </div>
+        </footer>
+        <!-- //footer -->
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $("nav > ul > li").mouseover(function(){
+            $(this).find(".submenu").stop().slideDown(200);
+        });
+        $("nav > ul > li").mouseout(function(){
+            $(this).find(".submenu").stop().slideUp(200);
+        });
+        
+        
+                //이미지슬라이드
+        var currentIndex = 0;
+        
+        setInterval(function(){
+            if(currentIndex < 2){
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            var slidePosition = currentIndex * (-1000)+"px";
+            $(".slidelist").animate({left:slidePosition},400);
+        },3000);
+        
+    </script>
+    
+</body>
+</html>
+        
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
